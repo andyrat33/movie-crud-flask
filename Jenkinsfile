@@ -44,7 +44,7 @@ pipeline {
     stage('sonar-publish') {
       steps {
         echo '===========Performing Sonar Scan============'
-        sh "${tool("sonarqube")}/bin/sonar-scanner -Dsonar.login=143dc5c09e7c859e595f8d541a83da7f559c4667"
+        sh "${tool("sonarqube")}/bin/sonar-scanner"
       }
     }
 
